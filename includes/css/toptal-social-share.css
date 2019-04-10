@@ -1,0 +1,119 @@
+/* Share Bar Wrapper and Icons */
+
+.ttss-share-bar__wrap {
+	list-style: none;
+	margin: 0;
+	padding: 8px 0;
+}
+
+.ttss-share-bar__wrap--sm {
+	list-style: none;
+	margin: 0;
+}
+
+.ttss-share-bar__wrap--sm .ttss-share-bar__link {
+	height: 16px;
+	width: 16px;
+}
+
+.ttss-share-bar__wrap--md .ttss-share-bar__link {
+	height: 24px;
+	width: 24px;
+}
+
+.ttss-share-bar__wrap--lg .ttss-share-bar__link {
+	height: 32px;
+	width: 32px;
+}
+
+.ttss-share-bar__item {
+	display: inline-block;
+	margin-right: 8px;
+	position: relative;
+	vertical-align: text-top;
+}
+
+.ttss-share-bar__link {
+	box-shadow: none !important; /* for Twenty Seventeen theme */
+	display: block;
+	opacity: 1;
+	text-decoration: none;
+	transition: opacity 250ms ease-in-out !important;
+}
+
+.ttss-share-bar__link:hover {
+	opacity: 0.6;
+}
+
+
+/* Floating Share Bar */
+
+.ttss-sticky {
+	float: left;
+	position: sticky;
+	top: 16px;
+}
+
+.ttss-share-bar__float .ttss-share-bar__wrap--sm {
+	margin-left: -24px;
+}
+
+.ttss-share-bar__float .ttss-share-bar__wrap--md {
+	margin-left: -32px;
+}
+
+.ttss-share-bar__float .ttss-share-bar__wrap--lg {
+	margin-left: -40px;
+}
+
+.ttss-share-bar__float .ttss-share-bar__item {
+	display: block;
+	margin: 0 0 8px;
+}
+
+
+/* Featured Image Share Bar */
+
+.ttss-feature-image__wrap {
+	position: relative;
+}
+
+.ttss-feature-image__wrap img {
+	display: block;
+}
+
+.ttss-feature-image__wrap .ttss-share-bar__wrap {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	text-align: right;
+}
+
+.ttss-feature-image__wrap .ttss-share-bar__wrap--sm {
+	padding: 4px 0;
+}
+
+.ttss-feature-image__wrap .ttss-share-bar__wrap--lg {
+	padding: 16px 8px;
+}
+
+.ttss-feature-image__wrap .ttss-share-bar__wrap:before {
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+	bottom: 0;
+	height: 40px;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+}
+
+.ttss-feature-image__wrap .ttss-share-bar__wrap--sm:before {
+	height: 32px;
+}
+
+.ttss-feature-image__wrap .ttss-share-bar__wrap--lg:before {
+	height: 64px;
+}
